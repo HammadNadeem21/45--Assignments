@@ -15,43 +15,47 @@
 
 
 
-let guest_list:string[] = ["Hammad", "Taha", "Sufyan", "Huzaifa"];
+let guest_list:string[] = ["Taha", "Sufyan","Huzaifa"];
 
-// for(let i = 0; i < guest_list.length; i++){
-// console.log(`\nDear ${guest_list[i]} \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
-// }
+for(let i = 0; i < guest_list.length; i++){
+console.log(`\nDear ${guest_list[i]} \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
+}
 
 
 let not_present:string = "Huzaifa";
 console.log(`\nUnfortunately, ${not_present} can't make it to the dinner.`);
 
-let new_guest:string = "Adnan";
-guest_list[3]= new_guest;
+guest_list.splice(2,2,"Adnan")
 
-// for(let i = 0; i < guest_list.length; i++){
-//     console.log(`\nDear ${guest_list[i]} \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
-//     }
+
+for(let i = 0; i < guest_list.length; i++){
+    console.log(`\nDear ${guest_list[i]} \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
+    }
+
+
 
 // Exercise:16
 
-console.log("We found a bigger dinner table!");
+console.log("\nWe found a bigger dinner table!");
 
 
 // first guest
 guest_list.unshift("Salman");
-// console.log(guest_list)
+
 
 
 // second guest
-// let middleGuest = "Sameer";
-let middleGuest = Math.floor(guest_list.length / 1.5)
+
+let middleGuest = Math.floor(guest_list.length /2)
 guest_list.splice(middleGuest, 0, "Sameer");
 // console.log(guest_list);
 
 
+
 // third guest
 guest_list.push("Ikhlas");
-// console.log(guest_list);
+
+
 
 for(let i = 0; i<guest_list.length; i++){
 console.log(`\nDear ${guest_list[i]}, please join us for dinner. \nThank you`)
