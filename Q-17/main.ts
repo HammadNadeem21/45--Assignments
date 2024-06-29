@@ -1,21 +1,17 @@
+/*Q)17  Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 
-/* Q:16 More Guests: You just found a bigger dinner table, so now more space is
- available. Think of three more guests to invite to dinner.
+ • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
 
- • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a
- bigger dinner table.
+ • Remove guests from your list one at a time until only two names remain in your list. Each time you pop a name from your list, print
+ a message to that person letting them know you’re sorry you can’t invite them to dinner.
 
- • Add one new guest to the beginning of your array.
+ • Print a message to each of the two people still on your list, letting them know they’re still invited.
 
- • Add one new guest to the middle of your array.
- • Use append() to add one new guest to the end of your list.
- • Print a new set of invitation messages, one for each person in your list.*/
-
+ • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
+ of your program.*/
 
 
-
-
-let guest_list:string[] = ["Taha", "Sufyan","Huzaifa"];
+ let guest_list:string[] = ["Taha", "Sufyan","Huzaifa"];
 
 for(let i = 0; i < guest_list.length; i++){
 console.log(`\nDear ${guest_list[i]}\nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
