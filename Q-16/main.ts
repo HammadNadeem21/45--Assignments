@@ -22,8 +22,8 @@ console.log(`\nDear ${guest_list[i]}\nyou are invited to dinner. Please join us 
 }
 
 
-let not_present:string = "Huzaifa";
-console.log(`\nUnfortunately, ${not_present} can't make it to the dinner.`);
+let notPresent:string = "Huzaifa";
+console.log(`\nUnfortunately, ${notPresent} can't make it to the dinner.`);
 
 guest_list.splice(2,2,"Adnan")
 

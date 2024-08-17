@@ -13,8 +13,8 @@ var guest_list = ["Taha", "Sufyan", "Huzaifa"];
 for (var i = 0; i < guest_list.length; i++) {
     console.log("\nDear ".concat(guest_list[i], "\nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you"));
 }
-var not_present = "Huzaifa";
-console.log("\nUnfortunately, ".concat(not_present, " can't make it to the dinner."));
+var notPresent = "Huzaifa";
+console.log("\nUnfortunately, ".concat(notPresent, " can't make it to the dinner."));
 guest_list.splice(2, 2, "Adnan");
 for (var i = 0; i < guest_list.length; i++) {
     console.log("\nDear ".concat(guest_list[i], " \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you"));
