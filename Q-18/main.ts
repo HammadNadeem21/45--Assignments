@@ -32,7 +32,7 @@ console.log("Alphabetical order:", place.slice().sort());
 
 
 // array is still in its original order by printing it.
-console.log("Orignal order:" , place);
+console.log("Orignal order after sorting:" , place);
 
 
 // Print array in reverse alphabetical order without changing the order of the original list.
@@ -40,9 +40,25 @@ console.log("Reverse alphabetical order:", place.slice().sort().reverse());
 
 
 // Show array is still in its original order by printing it again.
-console.log("Orignal order:" , place);
+console.log("Orignal order after reverse sorting:" , place);
 
 
-// Reverse the order of your list. Print the array to show that its order has changed.  
+// Reverse the order of the list. Print the array to show that its order has changed.  
+place.reverse();
+console.log("Reverse order:" ,place);
+
+
+// Reverse the order of the list again
+place.reverse()
+console.log("Reverse again:" , place);
+
+
+// Sort array so it’s stored in alphabetical order
+console.log("Alphabetical order:", place.slice().sort());
+
+
+
+// Sort to change  array so it’s stored in reverse alphabetical order
+console.log("Reverse alphabetical order:", place.slice().sort().reverse());
 
 
