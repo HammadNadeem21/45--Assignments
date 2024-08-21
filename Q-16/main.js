@@ -1,3 +1,4 @@
+"use strict";
 /* Q:16 More Guests: You just found a bigger dinner table, so now more space is
  available. Think of three more guests to invite to dinner.
 
@@ -9,25 +10,25 @@
  • Add one new guest to the middle of your array.
  • Use append() to add one new guest to the end of your list.
  • Print a new set of invitation messages, one for each person in your list.*/
-var guest_list = ["Taha", "Sufyan", "Huzaifa"];
-for (var i = 0; i < guest_list.length; i++) {
-    console.log("\nDear ".concat(guest_list[i], "\nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you"));
+let guest_list = ["Taha", "Sufyan", "Huzaifa"];
+for (let i = 0; i < guest_list.length; i++) {
+    console.log(`\nDear ${guest_list[i]}\nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`);
 }
-var notPresent = "Huzaifa";
-console.log("\nUnfortunately, ".concat(notPresent, " can't make it to the dinner."));
+let notPresent = "Huzaifa";
+console.log(`\nUnfortunately, ${notPresent} can't make it to the dinner.`);
 guest_list.splice(2, 2, "Adnan");
-for (var i = 0; i < guest_list.length; i++) {
-    console.log("\nDear ".concat(guest_list[i], " \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you"));
+for (let i = 0; i < guest_list.length; i++) {
+    console.log(`\nDear ${guest_list[i]} \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`);
 }
 // Exercise:16
 console.log("\nWe found a bigger dinner table!");
 // first guest
 guest_list.unshift("Salman");
 // second guest
-var middleGuest = Math.floor(guest_list.length / 2);
+let middleGuest = Math.floor(guest_list.length / 2);
 guest_list.splice(middleGuest, 0, "Sameer");
 // third guest
 guest_list.push("Ikhlas");
-for (var i = 0; i < guest_list.length; i++) {
-    console.log("\nDear ".concat(guest_list[i], ", please join us for dinner. \nThank you"));
+for (let i = 0; i < guest_list.length; i++) {
+    console.log(`\nDear ${guest_list[i]}, please join us for dinner. \nThank you`);
 }

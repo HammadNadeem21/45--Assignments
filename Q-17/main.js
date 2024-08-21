@@ -1,3 +1,4 @@
+"use strict";
 /*Q)17  Shrinking Guest List: You just found out that your new dinner table won’t arrive in time for the dinner, and you have space for only two guests.
 
  • Start with your program from Exercise 16. Add a new line that prints a message saying that you can invite only two people for dinner.
@@ -10,12 +11,12 @@
  • Remove the last two names from your list, so you have an empty list. Print your list to make sure you actually have an empty list at the end
  of your program.*/
 // Exercise:16
-var guest_list = ["Taha", "Sufyan", "Huzaifa"];
+let guest_list = ["Taha", "Sufyan", "Huzaifa"];
 /*for(let i = 0; i < guest_list.length; i++){
 console.log(`\nDear ${guest_list[i]}\nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
 }*/
-var absent = "Huzaifa";
-console.log("\nUnfortunately, ".concat(absent, " can't make it to the dinner."));
+let absent = "Huzaifa";
+console.log(`\nUnfortunately, ${absent} can't make it to the dinner.`);
 guest_list.splice(2, 2, "Adnan");
 /*for(let i = 0; i < guest_list.length; i++){
     console.log(`\nDear ${guest_list[i]} \nyou are invited to dinner. Please join us for an evening of good food and great conversation. \nThank you`)
@@ -24,7 +25,7 @@ console.log("\nWe found a bigger dinner table!");
 // first guest
 guest_list.unshift("Salman");
 // second guest
-var middleGuest = Math.floor(guest_list.length / 2);
+let middleGuest = Math.floor(guest_list.length / 2);
 guest_list.splice(middleGuest, 0, "Sameer");
 // third guest
 guest_list.push("Ikhlas");
@@ -36,14 +37,14 @@ console.log(guest_list);
 console.log("\nUnfortunately we can not arrange big dinner tablr, only two guests can be invited.");
 // remove guest
 while (guest_list.length > 2) {
-    var removeGuest = guest_list.pop();
+    let removeGuest = guest_list.pop();
     if (removeGuest !== undefined) {
-        console.log("Sorry, ".concat(removeGuest, " we can no invite you."));
+        console.log(`Sorry, ${removeGuest} we can no invite you.`);
     }
 }
 // print a message to each of the two people still on your list
-for (var i = 0; i < guest_list.length; i++) {
-    console.log("Dear ".concat(guest_list, " you are invited for a dinner."));
+for (let i = 0; i < guest_list.length; i++) {
+    console.log(`Dear ${guest_list} you are invited for a dinner.`);
 }
 // empty guest list
 guest_list.splice(0, guest_list.length);
